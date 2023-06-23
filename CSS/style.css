@@ -898,7 +898,7 @@ footer span{
 /*--=================== SCROLL ANIMATION ===================--*/
 .hidden{
     opacity: 0;
-    transition: opacity 1s, transform 1s;
+    transition: opacity 1.5s, transform 1.5s;
     transform: scale(.9);
 }
 
