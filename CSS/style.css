@@ -879,7 +879,7 @@ footer span{
     opacity: 0;
     transition: opacity 1s, transform 1s;
     transform: scale(.87);
-    transition-delay: .3s;
+    transition-delay: .2s;
 }
 
 .show{
