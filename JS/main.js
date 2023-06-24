@@ -49,6 +49,14 @@ link4.onclick = function(){
     menu__box.classList.toggle("menu__box-open");
 }
 
+book__now.onclick = function(){
+    menu__button.classList.toggle("openmenu");
+    menu.classList.toggle("openmenu-menu");
+    header.classList.toggle("openmenu-header");
+    book__now.classList.toggle("openmenu-book__now");
+    menu__box.classList.toggle("menu__box-open");
+}
+
 
 
 
