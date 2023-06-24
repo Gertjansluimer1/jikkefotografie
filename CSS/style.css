@@ -432,7 +432,7 @@ header{
 }
 
 .foldable__text{
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
