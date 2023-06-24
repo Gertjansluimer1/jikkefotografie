@@ -878,7 +878,7 @@ footer span{
 .hidden{
     opacity: 0;
     transition: opacity 1s, transform 1s;
-    transform: scale(.8);
+    transform: scale(.87);
     transition-delay: .3s;
 }
 
