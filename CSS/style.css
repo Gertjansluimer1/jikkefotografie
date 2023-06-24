@@ -312,6 +312,7 @@ header{
 }
 
 .contents1 h3{
+    margin-top: 5rem;
     font-size: 4rem;
     font-weight: 300;
     color: var(--body-color);
