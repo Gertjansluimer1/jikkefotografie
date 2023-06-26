@@ -130,6 +130,7 @@ header{
 }
 
 .logo h2{
+    margin-left: 2px;
     line-height: 0.9rem;
     font-size: 1.4rem;
 }
@@ -265,6 +266,7 @@ header{
     .marginbox{
         margin-top: -2rem;
         scale: 1.3;
+        color: var(--container-color2);
     }
 
     .menu li{
@@ -276,7 +278,6 @@ header{
         transition: .2s;
         transform: translateY(-.25rem);
     }
-
 }
 
 @media screen and (min-width: 1300px) {
@@ -1027,7 +1028,7 @@ footer span{
     opacity: 0;
     transition: opacity 1s, transform 1s;
     transform: scale(.87);
-    transition-delay: .1s;
+    transition-delay: .2s;
 }
 
 .show{
@@ -1055,3 +1056,36 @@ footer span{
     cursor: pointer;
     z-index: 50;
 }
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+    position: fixed;
+    right: 2rem;
+    bottom: -50%;
+    background-color: #d9b296;
+    padding: 6px;
+    display: none;
+    border-radius: .25rem;
+    color: var(--body-color);
+    font-size: 1.25rem;
+    box-shadow: 0 4px 12px #00000044;
+    z-index: var(--z-tooltip);
+    transition: bottom .4s, transform .4s;
+}
+  
+.scrollup:hover {
+    transform: translateY(-.25rem);
+}
+
+@media screen and (min-width: 620px) {
+    .scrollup{
+        display: inline-flex;
+    }
+}
+  
+/* Show Scroll Up */
+.show-scroll {
+    bottom: 2rem;
+}
+
+  
