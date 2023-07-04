@@ -258,6 +258,7 @@ header{
     font-size: var(--h1-font-size);
     color: var(--body-color);
     transition: color .2s;
+    padding-bottom: 1rem;
 }
 
 .link a.active{
