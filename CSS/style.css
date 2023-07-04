@@ -250,7 +250,7 @@ header{
 }
 
 .link{
-    transform: translateY(2.2rem);
+    transform: translateY(-2rem);
     transition: transform .5s;
 }
 
@@ -332,7 +332,7 @@ header{
     }
     
     .open_nav_list li{
-        transform: translateY(-1.8rem);
+        transform: translateY(-6rem);
     }
     
     .open_header{
