@@ -559,6 +559,10 @@ header{
     border: 1px solid var(--container-color);
 }
 
+.text_contact{
+    margin-bottom: .5rem;
+}
+
 .contact__form{
     width: 100%;
     display: flex;
