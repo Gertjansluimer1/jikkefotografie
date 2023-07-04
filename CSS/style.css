@@ -771,6 +771,14 @@ footer{
         line-height: 6rem;
     }
 
+    .home_content h1{
+        font-size: 2.8rem;
+    }
+
+    .home_content h1 span{
+        font-size: 3rem;
+    }
+
     /*--=================== STORIES ===================--*/
     .stories{
         flex-direction: row;
@@ -797,6 +805,11 @@ footer{
     /*--=================== CONTACT ===================--*/
     .contact_container{
         flex-direction: column;
+    }
+
+    .link a.active{
+        text-decoration: underline;
+        text-underline-offset: .4rem;
     }
 }
 
