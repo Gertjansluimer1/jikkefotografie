@@ -97,7 +97,7 @@ h1, h2, p, a{
 }
 
 .big_title_quote span{
-    font-family: var(--italic-font);
+    font-family: 'Playfair', serif;
     font-size: 2.2rem;
     color: red;
 }
