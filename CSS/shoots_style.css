@@ -1,0 +1,145 @@
+:root {    
+    /*--=================== COLOR ===================--*/
+    --accent-color: #ceb0a1;
+    --accent-color-alt2: #e2d9c8;
+    --accent-color-alt: #d0a98c;
+    --body-color: #f4f3ed;
+    --container-color: #282423;
+    --text-color: #3a3a3a;
+    --button-color: #9e9182;
+
+    /*--=================== FONT ===================--*/
+    --h1-font-size: 2rem;
+    --h2-font-size: 1rem;
+    --text-font-size: .8rem;
+    --basic-font: 'Montserrat', sans-serif;
+    --italic-font: 'Playfair', serif;
+}
+
+
+
+
+/*--=================== REUSABLE CSS CLASSES ===================--*/
+.section_shoots{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.3rem;
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+    background-color: var(--body-color);
+}
+
+.groen{
+    background-color: var(--button-color);
+    color: var(--body-color);
+}
+
+.roze{
+    background-color: var(--accent-color-alt);
+    color: var(--body-color);
+}
+
+.licht_groen{
+    background-color: var(--accent-color-alt2);
+}
+
+.bruin{
+    background-color: #ad9a8b;
+}
+
+.container_shoots{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text_normal_shoots{
+    font-size: var(--text-font-size);
+    font-family: var(--basic-font);
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-bottom: 3rem;
+    letter-spacing: .05rem;
+}
+
+.buttons_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+
+
+/*--=================== SHOOTS HOME ===================--*/
+.shoots{
+    height: 100vh;
+    background-image: url('foto4.jpeg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+
+/*--=================== SHOOTS RECHT-LINKS ===================--*/
+.textbox1{
+    flex: 1;
+    max-width: 450px;
+}
+
+.textbox2{
+    flex: 1;
+    text-align: right;
+    max-width: 450px;
+    order: -1;
+}
+
+.shoots_image{
+    width: fit-content;
+    overflow: hidden;
+    max-height: 630px;
+}
+
+.shoots_image img{
+    max-width: 450px;
+    width: 100%;
+    padding-top: 4rem;
+}
+
+
+
+
+
+/*--=================== MEDIA QUERIES ===================--*/
+@media screen and (min-width: 1023px) {
+    .container_shoots{
+        flex-direction: row;
+        max-width: 1023px;
+    }
+
+    .textbox1{
+        max-width: 40%;
+    }
+    
+    .textbox2{
+        max-width: 40%;
+        order: 1;
+    }
+
+    .shoots_image img{
+        padding-top: 0;
+    }
+
+    .buttons_container{
+        justify-content: flex-start;
+    }
+}

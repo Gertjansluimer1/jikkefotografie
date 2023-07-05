@@ -10,6 +10,7 @@ const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");
 const link3 = document.getElementById("link3");
 const link4 = document.getElementById("link4");
+const link5 = document.getElementById("link5");
 
 function menuToggle(){
     menu_button.classList.toggle("open_menu_button");
@@ -26,6 +27,7 @@ link1.onclick = menuToggle;
 link2.onclick = menuToggle;
 link3.onclick = menuToggle;
 link4.onclick = menuToggle;
+link5.onclick = menuToggle;
 book_now.onclick = menuToggle;
 
 
