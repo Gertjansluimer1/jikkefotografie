@@ -99,7 +99,7 @@ h1, h2, p, a{
 .big_title_quote span{
     font-family: var(--italic-font);
     font-size: 2.2rem;
-    color: var(--body-color);
+    color: red;
 }
 
 .big_title{
@@ -835,8 +835,8 @@ footer{
 
     /*--=================== ABOUT ===================--*/
     .profiel_foto_container{
-        margin-left: 5rem;
-        max-width: 480px;
+        margin-left: 4rem;
+        max-width: 500px;
     }
 
     /*--=================== CONTACT ===================--*/

@@ -150,4 +150,8 @@
     .buttons_container{
         justify-content: flex-start;
     }
+
+    .portret_offset{
+        transform: translateY(-2.8rem);
+    }
 }
