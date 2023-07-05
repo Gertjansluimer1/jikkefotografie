@@ -103,13 +103,7 @@ h1, h2, p, a{
 }
 
 .big_title{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-size: var(--h1-font-size);
-    font-weight: 300;
-}
-
-.shoots_big_title{
+    margin-top: .5rem;
     margin-bottom: 1.5rem;
     font-size: var(--h1-font-size);
     font-weight: 300;
@@ -121,7 +115,6 @@ h1, h2, p, a{
     font-weight: 500;
     line-height: 1.8rem;
     width: 100%;
-    text-align: start;
 }
 
 .text_normal{
@@ -131,6 +124,7 @@ h1, h2, p, a{
     line-height: 1.8rem;
     margin-bottom: 2rem;
     letter-spacing: .05rem;
+    width: 100%;
 }
 
 .big_title span{
@@ -493,6 +487,7 @@ header{
     width: 100%;
     display: flex;
     overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .image img{

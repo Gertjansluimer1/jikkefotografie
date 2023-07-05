@@ -32,6 +32,13 @@
     background-color: var(--body-color);
 }
 
+.shoots_big_title{
+    margin-top: .8rem;
+    margin-bottom: 1.5rem;
+    font-size: var(--h1-font-size);
+    font-weight: 300;
+}
+
 .groen{
     background-color: var(--button-color);
     color: var(--body-color);
@@ -48,6 +55,7 @@
 
 .bruin{
     background-color: #ad9a8b;
+    color: #1d1a19;
 }
 
 .container_shoots{
