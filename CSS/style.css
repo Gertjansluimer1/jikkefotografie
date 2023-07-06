@@ -96,9 +96,13 @@ h1, h2, p, a{
     text-align: center;
 }
 
-.big_title_quote i{
+.big_title_quote i,
+.big_title i{
     font-family: var(--italic-font);
     font-size: 2.2rem;
+}
+
+.big_title_quote i{
     color: var(--body-color);
 }
 
@@ -125,11 +129,6 @@ h1, h2, p, a{
     margin-bottom: 2rem;
     letter-spacing: .05rem;
     width: 100%;
-}
-
-.big_title span{
-    font-family: var(--italic-font);
-    font-size: 2.2rem;
 }
 
 .button{
@@ -573,6 +572,17 @@ header{
     padding-top: 3rem;
 }
 
+.client_closet{
+    margin-left: 3rem;
+}
+
+.client_closet_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
 
 
 
@@ -812,8 +822,8 @@ footer{
         font-size: 2.8rem;
     }
 
-    .home_content h1 span{
-        font-size: 3rem;
+    .home_content h1 i{
+        font-size: 3.1rem;
     }
 
     /*--=================== STORIES ===================--*/
@@ -837,6 +847,10 @@ footer{
     .profiel_foto_container{
         margin-left: 4rem;
         max-width: 500px;
+    }
+
+    .client_closet_div{
+        justify-content: flex-start;
     }
 
     /*--=================== CONTACT ===================--*/
