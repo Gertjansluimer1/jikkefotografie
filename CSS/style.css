@@ -96,8 +96,8 @@ h1, h2, p, a{
     text-align: center;
 }
 
-.big_title_quote span{
-    font-family: 'Montserrat', sans-serif;
+.big_title_quote i{
+    font-family: var(--italic-font);
     font-size: 2.2rem;
     color: var(--body-color);
 }
