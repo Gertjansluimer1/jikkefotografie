@@ -97,9 +97,9 @@ h1, h2, p, a{
 }
 
 .big_title_quote span{
-    font-family: 'Playfair', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.2rem;
-    color: red;
+    color: var(--body-color);
 }
 
 .big_title{
