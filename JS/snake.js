@@ -1,7 +1,7 @@
  //board
  var blockSize = 20;
- var rows = 25;
- var cols = 25;
+ var rows = 18;
+ var cols = 18;
  var board;
  var context;
 
@@ -36,7 +36,7 @@
     placeFood();
     document.addEventListener("keyup", changeDirection);
     //update();
-    setInterval(update, 1000/10);
+    setInterval(update, (1000/8));
 }
 
 
@@ -66,7 +66,7 @@ function update() {
     context.fillStyle = "black";
     context.fillRect(0, 0, board.width, board.height);
 
-    context.fillStyle = "red";
+    context.fillStyle = "gold";
     context.fillRect(foodX, foodY, blockSize, blockSize)
 
     if (snakeX == foodX && snakeY == foodY) {
@@ -84,7 +84,7 @@ function update() {
         snakeBody[0] = [snakeX, snakeY]
     };
 
-    context.fillStyle = "#FFF";
+    context.fillStyle = "#9e9182";
     snakeX += velocityX * blockSize;
     snakeY += velocityY * blockSize;
     context.fillRect(snakeX, snakeY, blockSize, blockSize)
@@ -123,6 +123,38 @@ function changeDirection(e) {
     }
 }
 
+function left() {
+    if (velocityX != 1 && keyWatcher != 1) {
+        velocityX = -1;
+        velocityY = 0;
+        keyWatcher = 1;
+    }
+}
+
+function right() {
+    if (velocityX != -1 && keyWatcher != 1) {
+        velocityX = 1;
+        velocityY = 0;
+        keyWatcher = 1;
+    }
+}
+
+function up() {
+    if (velocityY != 1 && keyWatcher != 1) {
+        velocityX = 0;
+        velocityY = -1;
+        keyWatcher = 1;
+    }
+}
+
+function down() {
+    if (velocityY != -1 && keyWatcher != 1) {
+        velocityX = 0;
+        velocityY = 1;
+        keyWatcher = 1;
+    }
+}
+
 function resetGame() {
     snakeX = blockSize * 5;
     snakeY = blockSize * 5;
@@ -143,6 +175,6 @@ function resetGame() {
 }
 
 function placeFood() {
-    foodX = Math.floor(Math.random() * cols) * blockSize;
-    foodY = Math.floor(Math.random() * rows) * blockSize;
+    foodX = (Math.floor(Math.random() * (cols-2)) * blockSize)+20;
+    foodY = (Math.floor(Math.random() * (rows-2)) * blockSize)+20;
 }

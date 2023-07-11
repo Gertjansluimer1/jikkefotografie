@@ -83,6 +83,10 @@
     gap: 2rem;
 }
 
+.container_left{
+    flex-direction: row-reverse;
+}
+
 
 
 

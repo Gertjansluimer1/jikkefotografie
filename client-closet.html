@@ -10,17 +10,45 @@
 
     <!--==================== JS ====================-->
     <script src="JS/snake.js"></script>
+
+    <!--==================== ICONS ====================-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    <h1 class="title">
+    <h1 class="title" style="font-size: 1rem; margin-bottom: 1rem;">
         Er word hard gewerkt aan deze pagina
     </h1>
     
     <div>
-        <p>snake</p>
-        <p id="counterDisplay">0</p>
-        <p id="highscore">0</p>
-        <canvas id="board"></canvas>
+        <h1>snake</h1>
+        <button class="button1" id="button-left" onclick="resetGame()">
+            <i class='bx bx-reset'></i>
+        </button>
+        <div class="hoi">
+            <p id="counterDisplay">0</p>
+            <p id="highscore">0</p>
+        </div>
+        <canvas class="canvas" id="board"></canvas>
+        <div>
+            <button class="button1" id="button-up" onclick="up()">
+                <i class='bx bxs-chevron-up-circle'></i>
+            </button>
+
+            <div>
+                <button class="button1 button_left" id="button-left" onclick="left()">
+                    <i class='bx bxs-chevron-left-circle'></i>
+                </button>
+    
+                <button class="button1" id="button-right" onclick="right()">
+                    <i class='bx bxs-chevron-right-circle'></i>
+                </button>
+            </div>
+
+            <button class="button1" id="button-down" onclick="down()">
+                <i class='bx bxs-chevron-down-circle'></i>
+            </button>
+        </div>
         <p id="resetText"></p>
     </div>
 </body>

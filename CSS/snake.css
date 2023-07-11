@@ -9,15 +9,39 @@
 body{
     background-color: #e0c6b9;
     height: 100vh;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.title{
-    position: absolute;
-    top: 2rem;
+.hoi{
+    justify-content: center;
     width: 100%;
+    gap: 2rem;
+    display: flex;
+    background-color: #9e9182;
+    padding-top: .2rem;
+    border-radius: 15px 15px 0px 0px;
+    padding-bottom: .2rem;
+}
+
+.button1{
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    font-size: 3.75rem;
+    cursor: pointer;
+}
+
+.button_left{
+    margin-right: 5rem;
+}
+
+.canvas{
+    border-radius: 0px 0px 15px 15px;
 }
