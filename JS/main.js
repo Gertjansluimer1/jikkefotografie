@@ -32,6 +32,21 @@ book_now.onclick = menuToggle;
 
 
 
+/*=============== SHOW HEADER ===============*/ 
+var lastScrollTop = 0;
+window.addEventListener("scroll", function(){
+    var scrollTop = this.window.scrollY || this.document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        header.classList.add('hide_header');
+    }
+    else {
+        header.classList.remove('hide_header');
+    }
+    lastScrollTop = scrollTop;
+})
+
+
+
 
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
