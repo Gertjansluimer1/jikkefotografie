@@ -36,7 +36,7 @@ book_now.onclick = menuToggle;
 var lastScrollTop = 0;
 window.addEventListener("scroll", function(){
     var scrollTop = this.window.scrollY || this.document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
+    if (scrollTop > lastScrollTop && scrollTop > 200) {
         header.classList.add('hide_header');
     }
     else {
